@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Calculator | By Zaid Khan</title>
+  </head>
+  <body>
+    <div id="calculator-display">
+      <input
+        type="text"
+        id="text-display"
+        readonly
+        placeholder="You can Calculate"
+      />
+      <div class="btn-container">
+        <button
+          class="button"
+          onclick="values = '';
+        document.querySelector('#text-display').value = values"
+        >
+          C
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '1';
+        document.querySelector('#text-display').value = values"
+        >
+          1
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '2';
+        document.querySelector('#text-display').value = values"
+        >
+          2
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '3';
+        document.querySelector('#text-display').value = values"
+        >
+          3
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '+';
+        document.querySelector('#text-display').value = values"
+        >
+          +
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '4';
+        document.querySelector('#text-display').value = values"
+        >
+          4
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '5';
+        document.querySelector('#text-display').value = values"
+        >
+          5
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '6';
+        document.querySelector('#text-display').value = values"
+        >
+          6
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '-';
+        document.querySelector('#text-display').value = values"
+        >
+          -
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '7';
+        document.querySelector('#text-display').value = values"
+        >
+          7
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '8';
+        document.querySelector('#text-display').value = values"
+        >
+          8
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '9';
+        document.querySelector('#text-display').value = values"
+        >
+          9
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '*';
+        document.querySelector('#text-display').value = values"
+        >
+          *
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '/';
+        document.querySelector('#text-display').value = values"
+        >
+          /
+        </button>
+        <button
+          class="button"
+          onclick="values = values + '.';
+                document.querySelector('#text-display').value = values"
+        >
+          .
+        </button>
+
+        <button
+          class="button"
+          onclick="values = values + '0';
+        document.querySelector('#text-display').value = values"
+        >
+          0
+        </button>
+        <button
+          class="button"
+          onclick="values = eval(values);
+        document.querySelector('#text-display').value = values"
+        >
+          =
+        </button>
+        <h2>
+          Calc By <span style="color: red">Z</span>aid
+          <span style="color: red">K</span>han
+        </h2>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
